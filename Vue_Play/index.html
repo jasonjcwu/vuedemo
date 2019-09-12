@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vue-exercise</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="vue-app">
+        <h1>{{ MyName }}</h1>
+        <div class="computed">
+            <button v-on:click="a++">add</button>
+        </div>
+        <div class="keyboard">
+            <label for="">name:</label>
+            <input ref="name" type="text" v-model="name">
+            <label for="">age:</label>
+            <input ref="age" type="text" v-on:keyup.enter="logAge">
+            <div>{{name}} {{age}}</div>
+        </div>
+        <p>{{job}}{{greet('afternoon')}}</p>
+        <a v-bind:href="website">baidu</a>
+        <input type="text" v-bind:value="name">
+        <p v-html="websiteTag"></p>
+        <button @click.once="add(1)">加一页</button>
+        <button v-on:click="subtract(1)">减一页</button>
+        <button v-on:dblclick="subtract(10)">减十页</button>
+        <button v-on:dblclick="add(10)">加十页</button>
+        <p>当前页数{{page}}</p>
+
+        <div id="canvas" v-on:mousemove="updateXY">
+            {{x}},{{y}} -
+            <span v-on:mousemove.stop>阻止冒泡事件</span>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+{
+    "users": [{
+        "name": "jason",
+        "phone": "178645548898",
+        "id": 1,
+        "age": 1,
+        "email": "2249038142@qq.com",
+        "companyId": 1
+    }, {
+        "name": "tom",
+        "phone": "134r5544598",
+        "id": 2,
+        "age": 1,
+        "email": "2249038142@qq.com",
+        "companyId": 3
+    }, {
+        "name": "joh",
+        "phone": "17873678228",
+        "id": 2,
+        "age": 1,
+        "email": "2249038142@qq.com",
+        "companyId": 2
+    }],
+    "companies": [{
+        "id": 1,
+        "name": "Apple",
+        "description": "apple is good"
+    }, {
+        "id": 2,
+        "name": "Google",
+        "description": "google is good"
+    }, {
+        "id": 3,
+        "name": "intel",
+        "description": "intel is good"
+    }]
+}
